@@ -14,7 +14,7 @@ body{
     background-color: rgb(199, 122, 145);
     color: white;
     min-height: 100vh;
-    background: url(../images/tasty-pizza-near-ingredients.jpg) no-repeat;
+    background: url(../images/img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -76,7 +76,7 @@ body{
 .entrar {
     width: 100%;
     height: 50px;
-    background: rgb(0, 0, 0);
+    background: white;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -93,23 +93,19 @@ input::placeholder {
 
 a {
     text-decoration: none;
-    color: rgb(151, 84, 99);
+    color: rgb(73, 42, 49);
 }
 
 a:hover {
     color:rgb(126, 37, 56) ;
 }
 
-button {
+.login button {
     transition: box-shadow 0.2s;
+    color: rgb(44, 24, 24);
 }
 
 button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-input{
-    color: white;
-    font-size: 20px;
-}
+  }
 
