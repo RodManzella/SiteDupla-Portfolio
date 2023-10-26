@@ -76,7 +76,7 @@ body{
 .entrar {
     width: 100%;
     height: 50px;
-    background: white;
+    background: rgb(0, 0, 0);
     border: none;
     outline: none;
     border-radius: 40px;
