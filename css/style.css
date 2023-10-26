@@ -24,14 +24,23 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    border: #fff solid 1px;
 }
 
-
+.slogan{
+    position: absolute;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    left: 650px;
+    top: 50px;
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    min-height: 200px;
+}
 .logo img{
     position: relative;
     width: 15vh;
-    right: 60px;
 
 }
 
