@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/login.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-</head>
-<body>
+    <script
+      type="text/javascript"
+      src="https://npmcdn.com/parse/dist/parse.min.js"
+    ></script>
+    <script>
+      Parse.initialize(
+        "5NVwDfwrsp0yv61kea9IxTFMBllGGI2W6aHdo7zv",
+        "uhSeZg2grzRapNlh89hu2WcyX6LUT9p6NUJQiJ0s"
+      );
+      Parse.serverURL = "https://parseapi.back4app.com/";
+
+
+      // Add on click listener to call the create parse user function
+      document.addEventListener("DOMContentLoaded", function () {
+        // Seu código JavaScript aqui, incluindo a adição do evento de clique
+        document
+          .getElementById("log-in")
+          .addEventListener("click", async function () {
+            login();
+          });
+      });
+    </script>
+  </head>
+  <body>
     <header class="header">
-        <a href="" class="logo"><img src="images/LogoDugs.png" alt=""></a>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Receitas</a>
-            <a href="#">Contato</a>
-            <a href="login.html">Login</a>
-        </nav>
+      <a href="" class="logo"><img src="images/LogoDugs.png" alt="" /></a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Receitas</a>
+        <a href="#">Contato</a>
+        <a href="login.html">Login</a>
+      </nav>
     </header>
     <div class="login">
-        <h1>Login</h1>
-        <p>Novo por aqui? <a href="cadastro.html">Crie sua conta! </a></p>
-        <div class="input">
-            <input type="text" placeholder="Nome de usuário">
-            <img width="7%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAT9JREFUSEvNlusNwjAMhK+TAJMAkwCTAJMAkwCTAJOATkpQmped4qrkb1p/9uVip8NEq5uIi6HgOYANgBeAJ4BbawGtYAJPAFYRiPC1S0KVQwuYsGslKuE7bfUtYELjSuM8CF9oStaCt05iTUxKLp65FrwHcNBQ3XdH6dsxwGd31lW2FiwZK4TQYISbgHmNHlIwt09z0WQmYAbRGExlLAbTSu2zr5mM5hNN5QO1gvkfZeeZL10QynrRyBtqPwQsHZ9q/+/BXt5ZpW1S8rt2WkkVl6aRJCfvMY1WvFY1cEvTyCVCqE8g2S+Bf4V6UHFUlsCaESjJHcKTUZkDt0wiLTzp3zkwnzZsj5aL85nt9LtyYA4DutlyJS+THPhtSQxi9QZIDLZycy73KpgSW8vsk+i9w6TONZLq7fPYLJHJKv4AKg02H/YTa+oAAAAASUVORK5CYII="/>
-        </div>
-        <div class="input">
-            <input type="password" placeholder="Senha">
-            <img width="7%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAQpJREFUSEvtltENwjAMRK+TAJvAJMAkwCSwCTAJMAnopEQyrZ04DVI+iH9a1WlefLYjD2hkQyMu5oKXALYAXgCeAG6lAZSC1wCuCoTwC4CT9wAl4B2Ac2bjoxfuBctIGR0jY4SUnL5DeKdv75HeC6a8BNBWIa8yeB7gET4w35uc5F7wO2yUkpJR08+oebikecBSZspIiTWT6xhxstJLwakNO3i21PF24pM9TGN+WTyajdfdQ57V9VaOrRsqV6xjv+z5L58Fln1bCtPgk/aywLFva6Hx/wmng6M0XeraIuvFZQ57/1dcv7wy1VHIurk8E6W30tXhITWBxAly4SUo68w52zP6VHDtX5uBP05KQB8X/wF5AAAAAElFTkSuQmCC"/>
-           
-        </div>
-        <label><input class="checkbox" type="checkbox">Manter-me conectado</label>
-        <button type="submit" class="entrar">Entrar</button>
+      <h1>Login</h1>
+      <p>Novo por aqui? <a href="cadastro.html">Crie sua conta! </a></p>
+      <div class="input">
+        <input type="text" placeholder="Nome de usuário" />
+        <img
+          width="7%"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAT9JREFUSEvNlusNwjAMhK+TAJMAkwCTAJMAkwCTAJOATkpQmped4qrkb1p/9uVip8NEq5uIi6HgOYANgBeAJ4BbawGtYAJPAFYRiPC1S0KVQwuYsGslKuE7bfUtYELjSuM8CF9oStaCt05iTUxKLp65FrwHcNBQ3XdH6dsxwGd31lW2FiwZK4TQYISbgHmNHlIwt09z0WQmYAbRGExlLAbTSu2zr5mM5hNN5QO1gvkfZeeZL10QynrRyBtqPwQsHZ9q/+/BXt5ZpW1S8rt2WkkVl6aRJCfvMY1WvFY1cEvTyCVCqE8g2S+Bf4V6UHFUlsCaESjJHcKTUZkDt0wiLTzp3zkwnzZsj5aL85nt9LtyYA4DutlyJS+THPhtSQxi9QZIDLZycy73KpgSW8vsk+i9w6TONZLq7fPYLJHJKv4AKg02H/YTa+oAAAAASUVORK5CYII="
+        />
+      </div>
+      <div class="input">
+        <input type="password" placeholder="Senha" />
+        <img
+          width="7%"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAQpJREFUSEvtltENwjAMRK+TAJvAJMAkwCSwCTAJMAnopEQyrZ04DVI+iH9a1WlefLYjD2hkQyMu5oKXALYAXgCeAG6lAZSC1wCuCoTwC4CT9wAl4B2Ac2bjoxfuBctIGR0jY4SUnL5DeKdv75HeC6a8BNBWIa8yeB7gET4w35uc5F7wO2yUkpJR08+oebikecBSZspIiTWT6xhxstJLwakNO3i21PF24pM9TGN+WTyajdfdQ57V9VaOrRsqV6xjv+z5L58Fln1bCtPgk/aywLFva6Hx/wmng6M0XeraIuvFZQ57/1dcv7wy1VHIurk8E6W30tXhITWBxAly4SUo68w52zP6VHDtX5uBP05KQB8X/wF5AAAAAElFTkSuQmCC"
+        />
+      </div>
+      <label
+        ><input class="checkbox" type="checkbox" />Manter-me conectado</label
+      >
+      <button type="submit" class="entrar" id="log-in">Entrar</button>
     </div>
-</body>
+  </body>
 </html>
