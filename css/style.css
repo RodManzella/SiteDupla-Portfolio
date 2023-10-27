@@ -84,6 +84,7 @@ body{
     min-height: 100vh;
     position: relative;
     transform-style: preserve-3d;
+    height: 50%;
     
   }
   .section2 {
@@ -91,7 +92,7 @@ body{
   }
   
   .text {
-    top:40%;
+    top:30%;
     left:50%;
     position: absolute;
     font-family: 'Franklin Gothic Heavy';
@@ -103,13 +104,10 @@ body{
     z-index: -3;
   }
 
-  
-
   .section1 img {
     width: 50%;
     margin-left: 25%;
     z-index: 1;
-    transition: transform 10s ease;
     opacity: 10;
   }
 
@@ -132,11 +130,23 @@ body{
   }
 
 
-  .section1 .imagem {
+.section1 .imagem {
     position: relative;
     transition: transform 1s ease;
 }
 
 .scroll-ativo .imagem {
     transform: translateY(-10%);
+}
+
+.imagem1 {
+    padding-top: 10%;
+    position: absolute;
+    padding-left: 7%;
+}
+
+
+.imagem2 {
+ 
+    position: absolute;
 }
