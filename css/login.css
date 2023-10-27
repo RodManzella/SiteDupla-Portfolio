@@ -13,7 +13,6 @@ body{
     align-items: center;
     background-color: rgb(199, 122, 145);
     color: white;
-    min-height: 100vh;
     background: url(../images/img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
