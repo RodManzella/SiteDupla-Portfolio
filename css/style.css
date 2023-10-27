@@ -5,6 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('GrannyRegular-ALYgg.ttf') format('truetype'); /* Formato da fonte TTF */
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body{
     width: 100vw;
@@ -92,11 +99,11 @@ body{
   }
   
   .text {
-    top:35%;
+    top:33%;
     left:50%;
     position: absolute;
     font-family: 'Franklin Gothic Heavy';
-    font-size: 600%;
+    font-size: 500%;
     color:white;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
     5px 5px 70px rgba(255,255,255,0.5);
@@ -153,4 +160,17 @@ body{
     position: absolute;
     padding-left: 7%;
     padding-bottom: 5%;
+}
+
+.imagem1 img {
+    padding-top: 7.5%;
+}
+
+.text2 {
+    padding-bottom: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text1 {
+    font-family: 'MinhaFonte', sans-serif;
 }
