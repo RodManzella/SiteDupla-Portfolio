@@ -74,7 +74,7 @@ body{
     padding-top: 5%
 }
 
-.section1, .section2 {
+.section1, .section2, .section3 {
     width:100%;
     min-height: 100vh;
     position: relative;
@@ -112,17 +112,22 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    margin-bottom: 200px;
   }
 
   .section2 {
-    background: url(../images/img.jpg) no-repeat;
+    background: url(../images/frigideira-com-legumes.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     z-index: 100;
-    /* background-attachment: scroll; */
+    text-align: center;    /* background-attachment: scroll; */
   }
+
+.section2 p {
+    color:  rgb(145, 67, 67);
+}
 
   .section3 {
     background: rgb(145, 67, 67);
@@ -146,8 +151,6 @@ body{
   
 
   }
-
-
 
 .section1 .imagem1 {
     position: relative;
@@ -187,7 +190,14 @@ body{
     font-size: 230%;
 }
 
-.text4 {
-    font-size: 100%;
+.text4 p {
+    font-size: 200%;
+    top: 50;
 }
+
+.text5 {
+    top: 10%;
+}
+
+
 
