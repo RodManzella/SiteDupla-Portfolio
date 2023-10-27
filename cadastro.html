@@ -47,9 +47,9 @@
       async function saveNewUsuario() {
         const usuario = new Parse.Object("Usuario");
 
-        usuario.set("Username", "John Snow");
-        usuario.set("Senha", "37372378");
-        usuario.set("Email", "testechato@gmail.com");
+        usuario.set("Username", document.getElementById("username").value);
+        usuario.set("Senha", document.getElementById("password").value);
+        usuario.set("Email", document.getElementById("email").value);
         try {
           let result = await usuario.save();
           alert("New object created with objectId: " + result.id);
