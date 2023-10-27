@@ -1,25 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/login.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-</head>
-<body>
+    <script
+      type="text/javascript"
+      src="https://npmcdn.com/parse/dist/parse.min.js"
+    ></script>
+    <script>
+      Parse.initialize(
+        "5NVwDfwrsp0yv61kea9IxTFMBllGGI2W6aHdo7zv",
+        "uhSeZg2grzRapNlh89hu2WcyX6LUT9p6NUJQiJ0s"
+      );
+      Parse.serverURL = "https://parseapi.back4app.com/";
+
+      async function login() {
+        const usernameInput = document.getElementById("nomeUser").value;
+        const senhaInput = document.getElementById("senha-login").value;
+
+        const Usuario = Parse.Object.extend("Usuario");
+        const query = new Parse.Query(Usuario);
+
+        query.equalTo("Username", usernameInput);
+        query.equalTo("Senha", senhaInput);
+
+        try {
+          const usuario = await query.first();
+          if (usuario) {
+            console.log("Login successful!");
+          } else {
+            console.log("Invalid username or password.");
+          }
+        } catch (error) {
+          console.error("Error: " + error.code + " " + error.message);
+        }
+      }
+
+      // Add on click listener to call the create parse user function
+      document.addEventListener("DOMContentLoaded", function () {
+        // Seu código JavaScript aqui, incluindo a adição do evento de clique
+        document
+          .getElementById("log-in")
+          .addEventListener("click", async function () {
+            login();
+          });
+      });
+    </script>
+  </head>
+  <body>
     <header class="header">
-        <a href="" class="logo"><img src="images/LogoDugs.png" alt=""></a>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Receitas</a>
-            <a href="#">Contato</a>
-            <a href="login.html">Login</a>
-        </nav>
+      <a href="" class="logo"><img src="images/LogoDugs.png" alt="" /></a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Receitas</a>
+        <a href="#">Contato</a>
+        <a href="login.html">Login</a>
+      </nav>
     </header>
-    <div class="login" id="formulario-cadastro">
+    <div class="login">
         <h1>Login</h1>
         <p>Novo por aqui? <a href="cadastro.html">Crie sua conta! </a></p>
         <div class="input">
@@ -34,5 +80,5 @@
         <label><input class="checkbox" type="checkbox">Manter-me conectado</label>
         <button type="submit" class="entrar">Entrar</button>
     </div>
-</body>
+  </body>
 </html>
