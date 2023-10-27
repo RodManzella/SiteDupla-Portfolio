@@ -1,0 +1,157 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  margin:0;
+  background: #ece9de;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: -1;
+  
+
+}
+
+.header{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo img{
+  position: relative;
+  width: 15vh;
+
+}
+
+.navbar a{
+  position: relative;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #c98086;
+  transition: .3s;
+}
+
+.navbar a:hover::before{
+  width: 100%;
+}
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  position: relative;
+  top: 20vh;
+  z-index: -1;
+}
+
+.recipe-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recipe-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.recipe-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.recipe-item h2 {
+  margin: 0;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.recipe-item p {
+  margin: 0;
+  padding: 10px;
+  color: #777;
+}
+
+.recipe-item a {
+  background: #26282e;
+  color: #fff;
+  min-width: 150px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.recipe-item a:hover {
+  background: #1e3799;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .recipe-item {
+    flex-direction: column;
+  }
+
+  .recipe-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .recipe-item h2 {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .recipe-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .recipe-item a {
+    width: 100%;
+    text-align: center;
+  }
+}
