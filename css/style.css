@@ -124,6 +124,30 @@ body{
     /* background-attachment: scroll; */
   }
 
+  .section3 {
+    background: rgb(145, 67, 67);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 100;
+  }
+
+  .section3 img {
+    width: 45%;
+    padding-top: 12%;
+    padding-left: 25%;
+    
+  }
+
+  .section3 p {
+    width: 40%;
+    padding-left: 15%;
+  
+
+  }
+
+
 
 .section1 .imagem1 {
     position: relative;
@@ -161,5 +185,9 @@ body{
 .text3 {
     padding-bottom: 380%;
     font-size: 230%;
+}
+
+.text4 {
+    font-size: 100%;
 }
 
