@@ -92,11 +92,11 @@ body{
   }
   
   .text {
-    top:30%;
+    top:35%;
     left:50%;
     position: absolute;
     font-family: 'Franklin Gothic Heavy';
-    font-size: 700%;
+    font-size: 600%;
     color:white;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
     5px 5px 70px rgba(255,255,255,0.5);
@@ -130,23 +130,27 @@ body{
   }
 
 
-.section1 .imagem {
+.section1 .imagem1 {
     position: relative;
     transition: transform 1s ease;
 }
 
-.scroll-ativo .imagem {
-    transform: translateY(-10%);
+.scroll-ativo .imagem1 {
+    transform: translateY(12%);
+}
+
+.section1 .imagem2 {
+    position: relative;
+    transition: transform 1s ease;
+}
+
+.scroll-ativo .imagem2 {
+    transform: translateY(-42%);
 }
 
 .imagem1 {
-    padding-top: 10%;
+    padding-top: 7%;
     position: absolute;
     padding-left: 7%;
-}
-
-
-.imagem2 {
- 
-    position: absolute;
+    padding-bottom: 5%;
 }
