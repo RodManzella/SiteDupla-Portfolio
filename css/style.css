@@ -197,6 +197,7 @@ body{
     display: flex;
     align-items: center;
     padding: 50px 8% 0;
+    justify-content: space-between;
 }
 
 .home-content {
@@ -242,6 +243,7 @@ body{
     position: relative;
     width: 450px;
     height: 450px;
+    transform: rotate(45deg);
 }
 
 .home-img .img {
