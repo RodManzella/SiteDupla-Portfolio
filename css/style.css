@@ -128,10 +128,6 @@ body{
     text-align: center;    /* background-attachment: scroll; */
   }
 
-.section2 p {
-    color:  rgb(145, 67, 67);
-}
-
   .section3 {
     background: rgb(145, 67, 67);
     background-size: cover;
@@ -147,31 +143,6 @@ body{
     padding-left: 25%;
     
   }
-
-  .section3 p {
-    width: 40%;
-    padding-left: 15%;
-  
-
-  }
-
-.text2 {
-    padding-bottom: 100%;
-}
-
-.text3 {
-    padding-bottom: 380%;
-    font-size: 230%;
-}
-
-.text4 p {
-    font-size: 200%;
-    top: 50;
-}
-
-.text5 {
-    top: 10%;
-}
 
 .home {
     width: 100%;
