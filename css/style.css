@@ -132,6 +132,8 @@ body{
     text-align: center;    /* background-attachment: scroll; */
   }
 
+  
+
   .section3 {
     background: rgb(145, 67, 67);
     background-size: cover;
@@ -379,3 +381,33 @@ body{
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+
+  .heading{
+    font-size: 3rem;
+    color: var(--pink);
+    text-align: center;
+    padding: 0 1rem;
+    padding-top: 1rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+  }
+
+  .title{
+    padding: 0.1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: #535353;
+  }
+
+  .section2 .image{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 90%;
+  }
+
+  .section2 .image img{
+    width: 30vw;
+  }
+
