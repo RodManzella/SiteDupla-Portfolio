@@ -17,6 +17,8 @@ body{
     background: url(../images/img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    perspective: 1px;
+    transform-style: preserve-3d;
 }
 
 #formulario-cadastro {
@@ -207,6 +209,7 @@ footer{
 .footerNav ul{
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 
 .footerNav ul li a{
