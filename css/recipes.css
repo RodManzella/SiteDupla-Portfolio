@@ -196,9 +196,21 @@ i:hover {
     font-family: mv boli;
 }
 
+.main h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
 .main .receitas {
     width: 95%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
 }
 
 .main .receitas .receita {
@@ -269,7 +281,9 @@ i:hover {
     text-align: center;
     margin: 10px auto 10px auto;
     font-size: 25px;
-    color: #fac031;
+    color:#ec8474;
+    text-shadow: #000000;
+    text-decoration: double;
 }
 
 .main .receitas .receita .info p{
@@ -293,6 +307,10 @@ i:hover {
     margin-left: 3%;
     padding-bottom: 5%;
     padding-top: 5%;
+}
+
+.main .receitas .receita .info .dificuldade .true {
+    color: #ec8474;
 }
 
 .main .receitas .receita .info .receitaBtn{
@@ -323,27 +341,4 @@ main{
     width: 100%;
 }
 
-.logado h1{
-    text-align: center;
-    font-size: 3rem;
 
-
-}
-
-.logado img{
-    display: block;
-    width: 300px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.botao-receitas{
-    display: inline-block;
-    color: white;
-    background-color: rgb(255, 102, 46);
-    width: 30%;
-    padding: 10px;
-    border: 1px solid white;
-    margin-top: 30px;
-    border-radius: 10px;
-}
