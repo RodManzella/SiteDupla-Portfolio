@@ -30,10 +30,11 @@ async function login() {
   }
 }
 
+let login = document.getElementById("log-in");
 // Add on click listener to call the create parse user function
 document.addEventListener("DOMContentLoaded", function () {
   // Seu código JavaScript aqui, incluindo a adição do evento de clique
-  document.getElementById("log-in").addEventListener("click", async function () {
+  login.addEventListener("click", async function () {
       login();
     });
 });
