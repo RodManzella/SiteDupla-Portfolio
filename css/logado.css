@@ -9,8 +9,7 @@
 body{
     min-height: 100vh;
     display:flex;
-    justify-content: center;
-    align-items: center;
+
     background-color: rgb(199, 122, 145);
     color: white;
     min-height: 100vh;
@@ -172,3 +171,58 @@ footer{
     margin: 0 5px;
 }
 
+i:hover {
+    color: #ec8474;
+}
+
+.main {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.main h1 {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 5%;
+}
+
+.main h1 span {
+    margin-left: 15px;
+    color: #ec8474;
+    font-family: mv boli;
+}
+
+.main .receitas {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.main .receitas .receita {
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3);
+}
+
+.main .receitas .receita .receitaImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.main .receitas .receita .receitaImg {
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main .receitas .receita .receitaImg:hover img {
+    transform: scale(1.1);
+}
