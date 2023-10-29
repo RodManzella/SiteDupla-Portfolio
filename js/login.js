@@ -21,7 +21,6 @@ async function login() {
     if (usuario) {
       console.log("Login successful!");
       document.title = "Dug´s - " + usuario.get("Username");
-      document.getElementById("pessoa-logada").innerHTML = usuario.get("Username") +" !"
       window.location.href = "paginaLogado.html";
     } else {
       console.log("Invalid username or password.");
