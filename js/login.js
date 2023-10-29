@@ -1,6 +1,10 @@
-Parse.initialize( "5NVwDfwrsp0yv61kea9IxTFMBllGGI2W6aHdo7zv",
-"uhSeZg2grzRapNlh89hu2WcyX6LUT9p6NUJQiJ0s");
-Parse.serverURL = "https://parseapi.back4app.com/";
+Parse.serverURL = 'https://parseapi.back4app.com'; // This is your Server URL
+// Remember to inform BOTH the Back4App Application ID AND the JavaScript KEY
+Parse.initialize(
+  'BCrUQVkk80pCdeImSXoKXL5ZCtyyEZwbN7mAb11f', // This is your Application ID
+  '4wPYRKbpTJeCdmFNaS31AiQZ8344aaYubk6Uo8VW' // This is your Javascript key
+);
+
 
 async function login() {
   const usernameInput = document.getElementById("nomeUser").value;
