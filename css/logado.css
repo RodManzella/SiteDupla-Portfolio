@@ -1,0 +1,50 @@
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo img{
+    position: relative;
+    width: 15vh;
+
+}
+
+.logo {
+    animation: slide 0.5s ease forwards;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: 0.3s;
+    animation: slideNav 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+    display: inline-block;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
