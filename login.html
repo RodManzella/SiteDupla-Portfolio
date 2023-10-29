@@ -39,6 +39,7 @@
           const usuario = await query.first();
           if (usuario) {
             console.log("Login successful!");
+            window.location.href = "paginaLogado.html";
           } else {
             console.log("Invalid username or password.");
           }
