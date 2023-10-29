@@ -32,9 +32,6 @@ async function login() {
 
 let btn_login = document.getElementById("log-in");
 // Add on click listener to call the create parse user function
-document.addEventListener("DOMContentLoaded", function () {
-  // Seu código JavaScript aqui, incluindo a adição do evento de clique
-  btn_login.addEventListener("click", function () {
-    login();
-  });
-});
+btn_login.onclick = () =>{
+  login()
+}
