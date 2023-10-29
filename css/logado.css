@@ -8,7 +8,6 @@
 
 body{
     min-height: 100vh;
-    display:flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(199, 122, 145);
@@ -170,5 +169,28 @@ footer{
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0 5px;
+}
+
+main{
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    top: 100px;
+    width: 100%;
+}
+
+.logado h1{
+    text-align: center;
+    font-size: 3rem;
+
+
+}
+
+.logado img{
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
 }
 
