@@ -194,3 +194,14 @@ main{
     margin: 0 auto;
 }
 
+.botao-receitas{
+    display: inline-block;
+    color: white;
+    background-color: rgb(255, 102, 46);
+    width: 30%;
+    padding: 10px;
+    border: 1px solid white;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
