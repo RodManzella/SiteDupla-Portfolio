@@ -1,6 +1,11 @@
-Parse.initialize( "5NVwDfwrsp0yv61kea9IxTFMBllGGI2W6aHdo7zv",
-"uhSeZg2grzRapNlh89hu2WcyX6LUT9p6NUJQiJ0s");
-Parse.serverURL = "https://parseapi.back4app.com/";
+const Parse = require('parse')
+Parse.serverURL = 'https://parseapi.back4app.com'; // This is your Server URL
+// Remember to inform BOTH the Back4App Application ID AND the JavaScript KEY
+Parse.initialize(
+  '5NVwDfwrsp0yv61kea9IxTFMBllGGI2W6aHdo7zv', // This is your Application ID
+  'uhSeZg2grzRapNlh89hu2WcyX6LUT9p6NUJQiJ0s' // This is your Javascript key
+);
+
 
 async function login() {
   const usernameInput = document.getElementById("nomeUser").value;
@@ -17,7 +22,6 @@ async function login() {
     if (usuario) {
       console.log("Login successful!");
       document.title = "Dug´s - " + usuario.get("Username");
-      document.getElementById("pessoa-logada").innerHTML = usuario.get("Username") +" !"
       window.location.href = "paginaLogado.html";
     } else {
       console.log("Invalid username or password.");
