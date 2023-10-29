@@ -1,9 +1,8 @@
-const Parse = require('parse')
 Parse.serverURL = 'https://parseapi.back4app.com'; // This is your Server URL
 // Remember to inform BOTH the Back4App Application ID AND the JavaScript KEY
 Parse.initialize(
   '5NVwDfwrsp0yv61kea9IxTFMBllGGI2W6aHdo7zv', // This is your Application ID
-  'uhSeZg2grzRapNlh89hu2WcyX6LUT9p6NUJQiJ0s' // This is your Javascript key
+  'uhSeZg2grzRapNlh89hu2WcyX6LUT9p6NUJQiJ0s', // This is your Javascript key // This is your Master key (never use it in the frontend)
 );
 
 
