@@ -206,7 +206,8 @@ i:hover {
     height: 480px;
     padding-top: 10px;
     margin-bottom: 20px;
-    box-shadow: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main .receitas .receita .receitaImg img {
@@ -227,6 +228,92 @@ i:hover {
 .main .receitas .receita .receitaImg:hover img {
     transform: scale(1.1);
 }
+
+.main .receitas .receita .smallCard{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.main .receitas .receita:hover .smallCard{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+
+.main .receitas .receita .smallCard i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+
+.main .receitas .receita .smallCard i:hover{
+    color:#ec8474;
+}
+
+.main .receitas .receita .info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #fac031;
+}
+
+.main .receitas .receita .info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.main .receitas .receita .info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main .receitas .receita .info .dificuldade{
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.main .receitas .receita .info .dificuldade i {
+    margin-left: 3%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.main .receitas .receita .info .receitaBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+    background-color: #ec8474;
+}
+
+.main .receitas .receita .info .receitaBtn:hover {
+    background-color: transparent;
+    color: #ec8474;
+    border: #ec8474 1px solid;
+}
+
 main{
     position: absolute;
     justify-content: center;
@@ -260,5 +347,3 @@ main{
     margin-top: 30px;
     border-radius: 10px;
 }
-
-
