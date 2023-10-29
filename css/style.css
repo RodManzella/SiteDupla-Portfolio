@@ -170,6 +170,7 @@ body{
 
   .section2 .sobreMain .sobreText .btn {
     background-color: #ec8474;
+    
   }
 
   .section2 .sobreMain .sobreText .btn:hover {
@@ -178,7 +179,7 @@ body{
   }
 
   .section3 {
-    background: rgb(145, 67, 67);
+    background: #ec8474;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -219,7 +220,7 @@ body{
 
 .home-content h3 {
     font-size: 40px;
-    color: chocolate;
+    color: #ec8474;
     animation: slide 1s ease forwards;
     animation-delay: 0.7s;
 }
@@ -234,9 +235,9 @@ body{
 .btn {
     display: inline-block;
     padding: 10px 28px;
-    background: chocolate;
+    background: #ec8474;
     color: white;
-    border: 2px solid coral;
+    border: 2px solid #ec8474;
     border-radius: 6px;
     box-shadow: 0 0 1-px rgba(0,0,0,0.3);
     font-size: 16px;
@@ -248,7 +249,7 @@ body{
 
 .btn:hover {
     background: transparent;
-    color: chocolate;
+    color: #ec8474;
 }
 
 .home-img {
@@ -263,7 +264,7 @@ body{
     width: 100%;
     height: 100%;
     background: #ffffff;
-    border: 25px solid chocolate;
+    border: 25px solid #ec8474;
     background-image: url("../images/tasty-pizza-near-ingredients.jpg");
     background-position: center;
     box-shadow: -15px 15px 15px rgba(0,0,0,0.3);
@@ -283,7 +284,7 @@ body{
     right: -25%;
     width: 700px;
     height: 700px;
-    background: chocolate;
+    background: #ec8474;
     transform: rotate(45deg);
     z-index: -1;
 }
@@ -395,7 +396,7 @@ body{
 
 .typewriter h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: .15em solid #ec8474; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -413,7 +414,7 @@ body{
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color: #ec8474; }
   }
 
   .heading{
@@ -448,9 +449,9 @@ body{
 #seta {
     position: absolute;
     width: 3%;
-    background: chocolate;
+    background: #ec8474;
     color: white;
-    border: 2px solid coral;
+    border: 2px solid #ec8474;
     border-radius: 6px;
     box-shadow: 0 0 1-px rgba(0,0,0,0.3);
     font-size: 16px;
