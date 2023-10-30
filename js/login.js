@@ -30,7 +30,7 @@ async function login() {
   }
 }
 
-let btn_login = document.getElementById("log-in");
+const btn_login = document.getElementById("log-in");
 // Add on click listener to call the create parse user function
 btn_login.onclick = () =>{
   login()
