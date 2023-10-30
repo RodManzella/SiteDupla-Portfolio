@@ -21,28 +21,16 @@ Parse.initialize(
     if (usuario) {
       console.log("Login successful!");
       window.location.href = "paginaLogado.html";
-      document.getElementById("titulo").innerText = "Dug´s - " + usernameInput;
-      document.getElementById("pessoa-logada").innerText = usernameInput;
     } else {
       console.log("Invalid username or password.");
     }
   } catch (error) {
     console.error("Error: " + error.code + " " + error.message);
   }
+
+  document.getElementById("titulo").innerText = "Dug´s - " + usernameInput;
+  document.getElementById("pessoa-logada").innerText = usernameInput;
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-  // Verificar se o usuário está na página "paginaLogado.html"
-  if (window.location.pathname.endsWith("paginaLogado.html")) {
-    // Obter o nome de usuário da URL (por exemplo, "paginaLogado.html?username=seuNomeDeUsuario")
-    const urlParams = new URLSearchParams(window.location.search);
-    const username = urlParams.get("username");
-
-    // Atualizar os elementos da página com o nome de usuário
-    document.getElementById("titulo").innerText = "Dug's - " + username;
-    document.getElementById("pessoa-logada").innerText = username;
-  }
-});
 
 
 // const btn_login = document.getElementById("log-in");
