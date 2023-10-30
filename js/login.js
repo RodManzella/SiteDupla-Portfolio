@@ -1,13 +1,12 @@
-const Parse = require('parse')
 Parse.serverURL = 'https://parseapi.back4app.com'; // This is your Server URL
 // Remember to inform BOTH the Back4App Application ID AND the JavaScript KEY
 Parse.initialize(
   '5NVwDfwrsp0yv61kea9IxTFMBllGGI2W6aHdo7zv', // This is your Application ID
-  'uhSeZg2grzRapNlh89hu2WcyX6LUT9p6NUJQiJ0s' // This is your Javascript key
+  'uhSeZg2grzRapNlh89hu2WcyX6LUT9p6NUJQiJ0s', // This is your Javascript key // This is your Master key (never use it in the frontend)
 );
 
 
-async function login() {
+ async function login() {
   const usernameInput = document.getElementById("nomeUser").value;
   const senhaInput = document.getElementById("senha-login").value;
 
@@ -21,8 +20,9 @@ async function login() {
     const usuario = await query.first();
     if (usuario) {
       console.log("Login successful!");
-      document.title = "Dug´s - " + usuario.get("Username");
       window.location.href = "paginaLogado.html";
+      document.getElementById("titulo").innerText = "Dug´s - " + usernameInput;
+      document.getElementById("pessoa-logada").innerText = usernameInput;
     } else {
       console.log("Invalid username or password.");
     }
@@ -31,12 +31,9 @@ async function login() {
   }
 }
 
-// Add on click listener to call the create parse user function
-document.addEventListener("DOMContentLoaded", function () {
-  // Seu código JavaScript aqui, incluindo a adição do evento de clique
-  document
-    .getElementById("log-in")
-    .addEventListener("click", async function () {
-      login();
-    });
-});
+
+// const btn_login = document.getElementById("log-in");
+// // Add on click listener to call the create parse user function
+// btn_login.onclick = () =>{
+//   login()
+// }

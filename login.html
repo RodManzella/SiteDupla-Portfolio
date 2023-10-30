@@ -15,7 +15,8 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-     <script
+
+     <!-- <script
       type="text/javascript"
       src="https://npmcdn.com/parse/dist/parse.min.js"
     ></script>
@@ -59,8 +60,8 @@
           .addEventListener("click", async function () {
             login();
           });
-      });
-    </script> 
+      }); 
+    </script> -->
   </head>
   <body>
     <header class="header">
@@ -85,7 +86,7 @@
            
         </div>
         <label><input class="checkbox" type="checkbox">Manter-me conectado</label>
-        <button type="submit" class="entrar" id="log-in">Entrar</button>
+        <button type="submit" class="entrar" id="log-in" onclick="login()">Entrar</button>
     </div>
 
     <footer class="footerContainer">
@@ -110,5 +111,7 @@
       </div>
 
     </footer>
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
