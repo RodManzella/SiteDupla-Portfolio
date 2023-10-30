@@ -6,7 +6,31 @@ Parse.initialize(
 );
 
 
- async function login() {
+//  async function login() {
+//   const usernameInput = document.getElementById("nomeUser").value;
+//   const senhaInput = document.getElementById("senha-login").value;
+
+//   const Usuario = Parse.Object.extend("Usuario");
+//   const query = new Parse.Query(Usuario);
+
+//   query.equalTo("Username", usernameInput);
+//   query.equalTo("Senha", senhaInput);
+
+//   try {
+//     const usuario = await query.first();
+//     if (usuario) {
+//       console.log("Login successful!");
+//       window.location.href = "paginaLogado.html";
+//     } else {
+//       console.log("Invalid username or password.");
+//     }
+//   } catch (error) {
+//     console.error("Error: " + error.code + " " + error.message);
+//   }
+
+// }
+
+async function login() {
   const usernameInput = document.getElementById("nomeUser").value;
   const senhaInput = document.getElementById("senha-login").value;
 
@@ -20,30 +44,17 @@ Parse.initialize(
     const usuario = await query.first();
     if (usuario) {
       console.log("Login successful!");
-      window.location.href = "paginaLogado.html";
+
+      // Redirecionar o usuário para a nova página com o nome de usuário na URL
+      window.location.href = `paginaLogado.html?username=${usernameInput}`;
     } else {
       console.log("Invalid username or password.");
     }
   } catch (error) {
     console.error("Error: " + error.code + " " + error.message);
   }
-
-  document.addEventListener("DOMContentLoaded", function() {
-    // Verificar se o usuário está na página "paginaLogado.html"
-    if (window.location.pathname.endsWith("paginaLogado.html")) {
-      // Obter o nome de usuário da URL (por exemplo, "paginaLogado.html?username=seuNomeDeUsuario")
-      const urlParams = new URLSearchParams(window.location.search);
-      const username = urlParams.get("username");
-  
-      // Atualizar o título da página (elemento <title>)
-      document.title = "Dug's - " + username;
-  
-      // Atualizar o texto do elemento <span> com ID "pessoa-logada"
-      document.getElementById("pessoa-logada").innerText = username;
-    }
-  });
-
 }
+
 
 
 
