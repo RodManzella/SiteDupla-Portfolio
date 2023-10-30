@@ -6,7 +6,7 @@ Parse.initialize(
 );
 
 
-async function login() {
+document.getElementById("log-in").onclick = async function login() {
   const usernameInput = document.getElementById("nomeUser").value;
   const senhaInput = document.getElementById("senha-login").value;
 
@@ -30,8 +30,9 @@ async function login() {
   }
 }
 
-const btn_login = document.getElementById("log-in");
-// Add on click listener to call the create parse user function
-btn_login.onclick = () =>{
-  login()
-}
+
+// const btn_login = document.getElementById("log-in");
+// // Add on click listener to call the create parse user function
+// btn_login.onclick = () =>{
+//   login()
+// }
