@@ -430,7 +430,7 @@ body{
   .title{
     padding: 0.1rem;
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
     font-weight: 400;
     color: #535353;
   }
