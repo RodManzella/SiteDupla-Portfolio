@@ -20,7 +20,8 @@ Parse.initialize(
     const usuario = await query.first();
     if (usuario) {
       console.log("Login successful!");
-      document.title = "Dug´s - " + usuario.get("Username");
+      document.title = "Dug´s - " + usernameInput;
+      document.getElementById("pessoa-logada").innerHTML = usernameInput;
       window.location.href = "paginaLogado.html";
     } else {
       console.log("Invalid username or password.");
