@@ -21,8 +21,8 @@ Parse.initialize(
     if (usuario) {
       console.log("Login successful!");
       window.location.href = "paginaLogado.html";
-      document.title = "Dug´s - " + usernameInput;
-      document.getElementById("pessoa-logada").innerHTML = usernameInput;
+      document.getElementById("titulo").innerText = "Dug´s - " + usernameInput;
+      document.getElementById("pessoa-logada").innerText = usernameInput;
     } else {
       console.log("Invalid username or password.");
     }
