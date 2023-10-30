@@ -31,6 +31,19 @@ Parse.initialize(
   }
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  // Verificar se o usuário está na página "paginaLogado.html"
+  if (window.location.pathname.endsWith("paginaLogado.html")) {
+    // Obter o nome de usuário da URL (por exemplo, "paginaLogado.html?username=seuNomeDeUsuario")
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get("username");
+
+    // Atualizar os elementos da página com o nome de usuário
+    document.getElementById("titulo").innerText = "Dug's - " + username;
+    document.getElementById("pessoa-logada").innerText = username;
+  }
+});
+
 
 // const btn_login = document.getElementById("log-in");
 // // Add on click listener to call the create parse user function
