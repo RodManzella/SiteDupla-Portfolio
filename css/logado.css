@@ -198,7 +198,7 @@ main{
 .botao-receitas{
     display: inline-block;
     color: white;
-    background-color: rgb(255, 112, 60);
+    background-color: #ec8474;
     width: 30%;
     padding: 10px;
     border: 1px solid white;
@@ -209,9 +209,10 @@ main{
 }
 
 .botao-receitas:hover{
-    background-color: rgb(255, 130, 60); /* Altera a cor de fundo no hover */
+    background-color: transparent; /* Altera a cor de fundo no hover */
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3); 
-    
+    color: #ec8474;
+    border-color: #ec8474;
 }
 
 i:hover {
