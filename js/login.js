@@ -6,7 +6,7 @@ Parse.initialize(
 );
 
 
-document.getElementById("log-in").onclick = async function login() {
+ async function login() {
   const usernameInput = document.getElementById("nomeUser").value;
   const senhaInput = document.getElementById("senha-login").value;
 
