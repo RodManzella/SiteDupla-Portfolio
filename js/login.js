@@ -6,7 +6,31 @@ Parse.initialize(
 );
 
 
- async function login() {
+//  async function login() {
+//   const usernameInput = document.getElementById("nomeUser").value;
+//   const senhaInput = document.getElementById("senha-login").value;
+
+//   const Usuario = Parse.Object.extend("Usuario");
+//   const query = new Parse.Query(Usuario);
+
+//   query.equalTo("Username", usernameInput);
+//   query.equalTo("Senha", senhaInput);
+
+//   try {
+//     const usuario = await query.first();
+//     if (usuario) {
+//       console.log("Login successful!");
+//       window.location.href = "paginaLogado.html";
+//     } else {
+//       console.log("Invalid username or password.");
+//     }
+//   } catch (error) {
+//     console.error("Error: " + error.code + " " + error.message);
+//   }
+
+// }
+
+async function login() {
   const usernameInput = document.getElementById("nomeUser").value;
   const senhaInput = document.getElementById("senha-login").value;
 
@@ -20,9 +44,9 @@ Parse.initialize(
     const usuario = await query.first();
     if (usuario) {
       console.log("Login successful!");
-      window.location.href = "paginaLogado.html";
-      document.getElementById("titulo").innerText = "Dug´s - " + usernameInput;
-      document.getElementById("pessoa-logada").innerText = usernameInput;
+
+      // Redirecionar o usuário para a nova página com o nome de usuário na URL
+      window.location.href = `paginaLogado.html?username=${usernameInput}`;
     } else {
       console.log("Invalid username or password.");
     }
@@ -30,6 +54,8 @@ Parse.initialize(
     console.error("Error: " + error.code + " " + error.message);
   }
 }
+
+
 
 
 // const btn_login = document.getElementById("log-in");

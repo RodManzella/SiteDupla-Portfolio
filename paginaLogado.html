@@ -13,7 +13,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Verificar se o usuário está na página "paginaLogado.html"
+          if (window.location.pathname.endsWith("paginaLogado.html")) {
+              // Obter o nome de usuário da URL (por exemplo, "paginaLogado.html?username=seuNomeDeUsuario")
+              const urlParams = new URLSearchParams(window.location.search);
+              const username = urlParams.get("username");
+
+              // Atualizar o título da página (elemento <title>)
+              document.title = "Dug's - " + username;
+
+              // Atualizar o texto do elemento <span> com ID "pessoa-logada"
+              document.getElementById("pessoa-logada").innerText = username;
+          }
+      });
+  </script>
 
     
 
