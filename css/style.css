@@ -179,8 +179,8 @@ body{
   }
 
   .section3 {
-    background: #ec8474;
-    background-size: cover;
+    background-image: url(../images/tasty-pizza-near-ingredients.jpg);
+    background-size: fill;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -491,6 +491,10 @@ body{
     
 }
 
+.section3 {
+    padding-bottom: 30px;
+}
+
 .equipes{
     width: 100%;
     height: 100vh;
@@ -506,6 +510,7 @@ body{
     justify-content: center;
     font-size: 55px;
     padding-top: 50px;
+    padding-bottom: 80px;
 }
 
 .equipes h1 span{
@@ -542,34 +547,33 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     box-shadow: 0 0 8px rgba(0,0,0,0.5);
     transition: 0.4s;
     color: #ffffff;
-    border: 5px black solid;
+    border: 1px solid black;
 }
 
 .equipes .equipe .perfil:hover{
     border-radius: 20px;
-    height: 320px;
+    height: 350px;
 }
 
 .equipes .equipe .perfil img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+    width: 800px;
+    height: 400px;
+    object-fit:cover;
     object-position: center;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 8px rgba(0,0,0,0.5);
     z-index: 2;
     transition: 0.4s;
-    border: 5px black solid;
+    margin-right: 70px;
 }
 
 .equipes .equipe .perfil:hover img{
     border-radius: 20px;
-    margin-top: -230px;
+    margin-top: -350px;
 }
 
 .equipes .equipe .perfil .info{
@@ -594,12 +598,8 @@ body{
     margin: 0 auto 10px auto;
 }
 
-.equipes .equipe .perfil .info .icones i{
-    margin: 10px 5px 5px 0;
-    cursor: pointer;
-    transition: 0.3s;
-}
 
-.equipes .equipe .perfil .info .icones i:hover{
-    color: #ec8474;
+
+html{
+    scroll-behavior: smooth;
 }
