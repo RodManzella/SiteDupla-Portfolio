@@ -565,14 +565,13 @@ body{
     object-position: center;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 0 8px rgba(0,0,0,0.5);
     z-index: 2;
     transition: 0.4s;
     margin-right: 70px;
 }
 
 .equipes .equipe .perfil:hover img{
-    border-radius: 20px;
+
     margin-top: -350px;
 }
 
@@ -603,3 +602,134 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+
+.section4 {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+    background-image: url(../images/receitas/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.section4 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+}
+
+.section4 h1 span{
+    color: #ec8474;
+    margin-right: 15px;
+    font-family: mv boli;
+    padding-right: 15px;
+}
+
+
+.section4 .contato-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section4 .contato-main .contato-img img{
+    width: 500px;
+}
+
+.section4 .contato-main form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+    color:#ec8474;
+}
+
+.section4 .contato-main form .input p{
+    line-height: 25px;
+}
+
+.section4 .contato-main form .input{
+    margin: 5px;
+}
+
+.section4 .contato-main form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+}
+
+.section4 .contato-main form .input2 input {
+    width: 300px;
+    height: 100px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+}
+
+.section4 .contato-main form .input2 {
+    padding-top: 20px;
+}
+
+.section4 .contato-main form .input input:focus{
+    border: 2px solid #ec8474;
+}
+
+.section4 .contato-main form .contato-btn{
+    padding: 10px 0;
+    background:#ec8474;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    margin: 70px;
+    margin-left: 100px;
+    border: #ec8474 1px solid;
+}
+
+.section4 .contato-main form .contato-btn:hover {
+    background-color: transparent;
+    color: #ec8474;
+    border-color: #ec8474;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social-icons a i{
+    font-size: 1em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+
